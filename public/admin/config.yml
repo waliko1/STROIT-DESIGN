@@ -25,7 +25,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "public/homePage.json"
+        file: "public/homepage.json"
         format: "json"
         fields:
           - label: "Home Page Configuration"

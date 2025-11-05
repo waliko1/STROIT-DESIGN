@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const [config, setConfig] = useState(null);
   const [project, setProject] = useState(null);
   const [selectedImage, setSelectedImage] = useState(0);
   const [windowSize, setWindowSize] = useState({

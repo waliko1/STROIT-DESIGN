@@ -139,7 +139,7 @@ const Home = () => {
           backgroundImage: `url(${currentSlide.backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          filter: "blur(2px) brightness(0.75)",
+          // filter: "blur(2px) brightness(0.75)",
           transform: fade ? "scale(1)" : "scale(1.03)",
           transition:
             "filter 1.5s ease, transform 1.8s ease, opacity 1.2s ease",

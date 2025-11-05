@@ -21,13 +21,6 @@
         "description": "Committed to sustainable practices and environmental responsibility",
         "backgroundImage": "/images/home/12.jpg",
         "alignment": "right"
-      },
-      {
-        "title": "Global Reach",
-        "subtitle": "Local Expertise, Worldwide",
-        "description": "Serving clients across continents with local understanding and global standards",
-        "backgroundImage": "/images/home/2.jpg",
-        "alignment": "center"
       }
     ]
   }

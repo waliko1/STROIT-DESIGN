@@ -72,11 +72,20 @@ const About = () => {
         >
           {config.about.title}
         </h1>
+        <div
+          style={{
+            height: "2px",
+            width: "80px",
+            backgroundColor: "#B59E7D",
+            margin: "0 auto",
+            marginBottom: "1rem",
+          }}
+        ></div>
         <p
           style={{
             fontSize: isMobile ? "1.1rem" : "1.2rem",
-            color: "#CEC1A8",
-            maxWidth: "800px",
+            color: "#EAE2D2",
+            maxWidth: "1200px",
             margin: "0 auto",
             lineHeight: 1.6,
             fontWeight: 300,
@@ -87,12 +96,12 @@ const About = () => {
       </div>
 
       {/* STROIT GROUP BIM Section */}
-      <SectionWithImage
+      {/* <SectionWithImage
         config={config.about.stroitGroup}
         isMobile={isMobile}
         isTablet={isTablet}
         imageFirst={false}
-      />
+      /> */}
 
       {/* Business Divisions */}
       <div

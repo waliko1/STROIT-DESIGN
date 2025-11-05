@@ -1,7 +1,7 @@
 {
   "about": {
-    "title": "About STROIT GROUP",
-    "subtitle": "Proudly Malawian company, Making your dream projects a reality. We emphasize durable sustainable designs, promoting Malawian products that compete on an international level.",
+    "title": "ABOUT STROIT GROUP",
+    "subtitle": "Proudly Malawian company, making your dream projects a reality. We emphasize durable, sustainable designs — promoting Malawian products that compete on an international level.\n\nSTROIT GROUP is your trusted partner in Building Information Modeling (BIM) — a smart, digital approach to designing, building, and managing construction projects.\n\nBIM is a 3D, data-driven process that connects architects, engineers, and contractors on one platform to revolutionize how we build. It allows modeling of architectural, structural, and MEP systems, real-time data sharing on materials, costs, and specifications, early design clash detection, and managing the full building lifecycle — from concept to maintenance.",
     "stroitGroup": {
       "title": "Building Information Modeling (BIM)",
       "content": "STROIT GROUP is your trusted partner in Building Information Modeling (BIM) — a smart, digital approach to designing, building, and managing construction projects.\n\nBIM is a 3D, data-driven process that connects architects, engineers, and contractors on one platform to revolutionize how we build.",
@@ -114,5 +114,4 @@
       "Donated podiums and furniture to a number of Catholic Churches"
     ]
   }
-
 }

@@ -113,16 +113,6 @@
       "Done free maintenances for the Kizito community hospital in Area 56",
       "Donated podiums and furniture to a number of Catholic Churches"
     ]
-  },
-  "home": {
-    "slides": [
-      {
-        "alignment": "left",
-        "title": "TEST TITLE",
-        "subtitle": "TEST SUBTILE",
-        "description": "TEST DESCRIPTION",
-        "backgroundImage": "/images/10.jpg"
-      }
-    ]
   }
+
 }

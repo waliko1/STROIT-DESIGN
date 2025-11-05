@@ -1,0 +1,117 @@
+{
+  "about": {
+    "title": "About STROIT GROUP",
+    "subtitle": "Proudly Malawian company, Making your dream projects a reality. We emphasize durable sustainable designs, promoting Malawian products that compete on an international level.",
+    "stroitGroup": {
+      "title": "Building Information Modeling (BIM)",
+      "content": "STROIT GROUP is your trusted partner in Building Information Modeling (BIM) — a smart, digital approach to designing, building, and managing construction projects.\n\nBIM is a 3D, data-driven process that connects architects, engineers, and contractors on one platform to revolutionize how we build.",
+      "features": [
+        "Model architectural, structural & MEP systems",
+        "Share real-time data on materials, costs & specs",
+        "Detect design clashes early",
+        "Manage the full building lifecycle — from concept to maintenance"
+      ],
+      "image": "/images/about/1.webp"
+    },
+    "timeline": [
+      {
+        "year": "1967",
+        "title": "Company Foundation",
+        "description": "Durobloc Construction Limited was incorporated by Messer's Morris Barns and Eric Duckworth. The company constructed various buildings including office blocks, schools, warehouses and residential properties."
+      },
+      {
+        "year": "1997",
+        "title": "New Ownership & Focus",
+        "description": "The Company was sold to Mr. Emidio Godinho. Under his management, the Carpentry and Joinery Department took over construction activities, focusing exclusively on carpentry and joinery work."
+      },
+      {
+        "year": "2002",
+        "title": "Second Generation Leadership",
+        "description": "Durobloc Construction & Joinery Limited began being managed by George Paul Godinho and Carlos Jose Godinho, who continue to lead the company today."
+      },
+      {
+        "year": "2009",
+        "title": "NCIC Registration",
+        "description": "Registered in the MK200 Million Category of the National Construction Industry Council, authorized to carry out construction works for Government, Parastatal and Private Sector Clients."
+      },
+      {
+        "year": "2021",
+        "title": "Expansion of Services",
+        "description": "Reintroduced property maintenance department, Plant hire and transportation department led by Joshua Godinho."
+      },
+      {
+        "year": "2023",
+        "title": "Billion Kwacha Category",
+        "description": "Upgraded to MK1 billion Category registration with the National Construction Industry Council, marking significant growth and capability expansion."
+      }
+    ],
+    "businessDivisions": [
+      {
+        "title": "Construction",
+        "description": "Our main goal is to ensure that construction projects are successfully completed within the constraints of best quality and stated period. We build structures, design and install MEP systems for schools, homes, and commercial buildings."
+      },
+      {
+        "title": "Property Maintenance",
+        "description": "Property maintenance is the process of ensuring buildings and their immediate environments are in optimum condition. We serve prestigious clients including American Embassy, World Food Program, and Sunrise Motel."
+      },
+      {
+        "title": "Joinery",
+        "description": "We construct and manufacture custom designs of furniture including cornices, skirting, kitchens, couches, wooden trusses, partition walls, and dining table sets. Our work can be seen at Kamuzu International Airport and LION Center."
+      },
+      {
+        "title": "Plant Hire",
+        "description": "We have 6 concrete mixers (500 liter each), rammers, vibration machines, saws machines, dumpers, scaffolding, containers, 17kva Generators, a tele handler and floating machines."
+      },
+      {
+        "title": "Transport",
+        "description": "Our fleet includes 20 tonner tippers, 15 tonner trucks, 7 tonner trucks, 1 and 1.5 ton Pick ups to support all our construction and logistics needs."
+      }
+    ],
+    "groupCompanies": [
+      {
+        "name": "Durobloc Construction & Joinery Ltd",
+        "description": "Experts in custom furniture, plant hire, building & civil works. With over 50 years of experience, we are one of Malawi's most trusted construction companies.",
+        "logoText": "DC"
+      },
+      {
+        "name": "Godinho Holdings",
+        "description": "Supporting construction through transport, retail, and manufacturing of blocks and concrete products. An integral part of our supply chain and operational support.",
+        "logoText": "GH"
+      }
+    ],
+    "team": [
+      {
+        "name": "George Godinho",
+        "position": "Managing Director",
+        "description": "Managing director since 2002 with over 20 years experience in construction and joinery. Leads the strategic direction and overall operations.",
+        "initials": "GG"
+      },
+      {
+        "name": "Carlos Godinho",
+        "position": "Managing Director",
+        "description": "Managing director since 2002 with over 20 years experience in joinery. Oversees joinery operations and quality control.",
+        "initials": "CG"
+      },
+      {
+        "name": "Margreat Godinho",
+        "position": "Head of Administration",
+        "description": "Head of admin since 2005 with over 20 years experience in business administration. Manages company operations and client relations.",
+        "initials": "MG"
+      },
+      {
+        "name": "Joshua Godinho",
+        "position": "Projects Manager",
+        "description": "Civil engineer with BSc and MSc in civil and industrial construction. Head of our design team for both furniture and construction projects.",
+        "initials": "JG"
+      }
+    ],
+    "accomplishments": [
+      "Trained students from Don Bosco technical colleges for many years",
+      "Some of our employees have branched off and created their own sustainable businesses",
+      "Won over 4 annual national trade fair awards",
+      "Perfect track record in safety of our employees on construction sites",
+      "Done free maintenances for the Kizito community hospital in Area 56",
+      "Donated podiums and furniture to a number of Catholic Churches"
+    ]
+  }
+}

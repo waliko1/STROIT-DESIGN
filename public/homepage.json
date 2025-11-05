@@ -1,0 +1,34 @@
+{
+  "home": {
+    "slides": [
+      {
+        "title": "WELCOME TO STROIT GROUP",
+        "subtitle": "Innovative Design Solutions",
+        "description": "Your trusted partner in construction and design excellence",
+        "backgroundImage": "/images/home/background1.jpg",
+        "alignment": "left"
+      },
+      {
+        "title": "Crafting Excellence",
+        "subtitle": "Premium Construction Services",
+        "description": "Transforming visions into reality with unmatched quality and precision",
+        "backgroundImage": "/images/home/background2.jpg",
+        "alignment": "center"
+      },
+      {
+        "title": "Sustainable Future",
+        "subtitle": "Eco-Friendly Building Solutions",
+        "description": "Committed to sustainable practices and environmental responsibility",
+        "backgroundImage": "/images/home/background3.jpg",
+        "alignment": "right"
+      },
+      {
+        "title": "Global Reach",
+        "subtitle": "Local Expertise, Worldwide",
+        "description": "Serving clients across continents with local understanding and global standards",
+        "backgroundImage": "/images/home/background4.jpg",
+        "alignment": "center"
+      }
+    ]
+  }
+}

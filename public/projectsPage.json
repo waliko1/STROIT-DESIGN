@@ -1,0 +1,33 @@
+{
+  "projects": {
+    "title": "Our Portfolio",
+    "items": [
+      {
+        "id": 1,
+        "title": "Modern Residence",
+        "shortDescription": "Luxury residential project with contemporary design",
+        "image": "/images/projects/6.webp",
+        "fullDescription": "This modern residence represents the pinnacle of contemporary architectural design. Featuring clean lines, expansive glass walls, and sustainable materials, the project seamlessly blends indoor and outdoor living spaces.\n\nThe residence was completed in 2024 and showcases our commitment to innovative design while maintaining functional elegance. Every detail was carefully considered to create a harmonious living environment that prioritizes both aesthetics and comfort.",
+        "gallery": [
+          "/images/projects/1.webp",
+          "/images/projects/2.webp",
+          "/images/projects/3.webp",
+          "/images/projects/4.webp"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Commercial Complex",
+        "shortDescription": "Mixed-use development in urban center",
+        "image": "/images/projects/5.webp",
+        "fullDescription": "A comprehensive commercial complex that redefines urban development. This mixed-use project features retail spaces, modern offices, and public areas designed to create a vibrant community hub.\n\nThe design emphasizes functionality while maintaining strong aesthetic appeal, with careful attention to pedestrian flow, natural lighting, and sustainable features. The complex serves as a benchmark for future urban developments in the region.",
+        "gallery": [
+          "/images/projects/6.webp",
+          "/images/projects/7.webp",
+          "/images/projects/8.webp",
+          "/images/projects/9.webp"
+        ]
+      }
+    ]
+  }
+}

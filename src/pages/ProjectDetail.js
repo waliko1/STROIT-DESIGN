@@ -23,7 +23,7 @@ const ProjectDetail = () => {
     fetch("/projectsPage.json")
       .then((response) => response.json())
       .then((data) => {
-        setConfig(data);
+        // REMOVED: setConfig(data); - This line is causing the error
         const foundProject = data.projects.items.find(
           (p) => p.id === parseInt(id)
         );

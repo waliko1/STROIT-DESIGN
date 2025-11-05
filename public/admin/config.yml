@@ -50,7 +50,7 @@ collections:
                       config:
                         multiple: false
                     choose_url: false
-                    media_folder: "public/images/home"
+                    media_folder: "/images/home"
                     public_folder: "/images/home"
                   - label: "Text Alignment"
                     name: "alignment"
@@ -89,7 +89,7 @@ collections:
                       config:
                         multiple: false
                     choose_url: false
-                    media_folder: "public/images/about"
+                    media_folder: "/images/about"
                     public_folder: "/images/about"
 
               - label: "Timeline"
@@ -185,7 +185,7 @@ collections:
                       config:
                         multiple: false
                     choose_url: false
-                    media_folder: "public/images/projects"
+                    media_folder: "/images/projects"
                     public_folder: "/images/projects"
                   - {
                       label: "Full Description",
@@ -203,7 +203,7 @@ collections:
                         config:
                           multiple: false
                       choose_url: false
-                      media_folder: "public/images/projects"
+                      media_folder: "/images/projects"
                       public_folder: "/images/projects"
 
       # Contact Page - FIXED: Using files array

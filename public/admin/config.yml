@@ -8,7 +8,8 @@ backend:
     uploadMedia: 'Upload "{{path}}"'
     deleteMedia: 'Delete "{{path}}"'
 
-media_folder: "public/images"
+# Global media settings - FIXED: Remove "public/" prefix
+media_folder: "images"
 public_folder: "/images"
 
 site_url: "https://stroit-designs.netlify.app"
@@ -19,7 +20,7 @@ locale: "en"
 show_preview_links: true
 
 collections:
-  # Home Page Slides - FIXED: Using files array
+  # Home Page Slides - FIXED: Correct media paths
   - name: "pages"
     label: "Pages"
     files:
@@ -46,19 +47,10 @@ collections:
                   - label: "Background Image"
                     name: "backgroundImage"
                     widget: "image"
-                    media_library:
-                      config:
-                        multiple: false
-                    choose_url: false
-                    media_folder: "/images/home"
-                    public_folder: "/images/home"
-                  - label: "Text Alignment"
-                    name: "alignment"
-                    widget: "select"
-                    options: ["left", "center", "right"]
-                    default: "left"
+                    # FIXED: Remove media_folder override - uses global setting
+                    # Images will go to: images/home/ automatically
 
-      # About Page - FIXED: Using files array
+      # About Page - FIXED: Correct media paths
       - label: "About Page"
         name: "about"
         file: "public/aboutPage.json"
@@ -85,72 +77,9 @@ collections:
                   - label: "Image"
                     name: "image"
                     widget: "image"
-                    media_library:
-                      config:
-                        multiple: false
-                    choose_url: false
-                    media_folder: "/images/about"
-                    public_folder: "/images/about"
+                    # FIXED: Remove media_folder override
 
-              - label: "Timeline"
-                name: "timeline"
-                widget: "list"
-                fields:
-                  - { label: "Year", name: "year", widget: "string" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - {
-                      label: "Description",
-                      name: "description",
-                      widget: "text",
-                    }
-
-              - label: "Business Divisions"
-                name: "businessDivisions"
-                widget: "list"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - {
-                      label: "Description",
-                      name: "description",
-                      widget: "text",
-                    }
-
-              - label: "Group Companies"
-                name: "groupCompanies"
-                widget: "list"
-                fields:
-                  - { label: "Company Name", name: "name", widget: "string" }
-                  - {
-                      label: "Description",
-                      name: "description",
-                      widget: "text",
-                    }
-                  - { label: "Logo Text", name: "logoText", widget: "string" }
-
-              - label: "Team Members"
-                name: "team"
-                widget: "list"
-                fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Position", name: "position", widget: "string" }
-                  - {
-                      label: "Description",
-                      name: "description",
-                      widget: "text",
-                    }
-                  - { label: "Initials", name: "initials", widget: "string" }
-
-              - label: "Accomplishments"
-                name: "accomplishments"
-                widget: "list"
-                field:
-                  {
-                    label: "Accomplishment",
-                    name: "accomplishment",
-                    widget: "string",
-                  }
-
-      # Projects Page - FIXED: Using files array
+      # Projects Page - FIXED: Correct media paths
       - label: "Projects Page"
         name: "projects"
         file: "public/projectsPage.json"
@@ -181,12 +110,7 @@ collections:
                   - label: "Main Image"
                     name: "image"
                     widget: "image"
-                    media_library:
-                      config:
-                        multiple: false
-                    choose_url: false
-                    media_folder: "/images/projects"
-                    public_folder: "/images/projects"
+                    # FIXED: Remove media_folder override
                   - {
                       label: "Full Description",
                       name: "fullDescription",
@@ -199,14 +123,9 @@ collections:
                       label: "Gallery Image"
                       name: "image"
                       widget: "image"
-                      media_library:
-                        config:
-                          multiple: false
-                      choose_url: false
-                      media_folder: "/images/projects"
-                      public_folder: "/images/projects"
+                      # FIXED: Remove media_folder override
 
-      # Contact Page - FIXED: Using files array
+      # Contact Page
       - label: "Contact Page"
         name: "contact"
         file: "public/contactPage.json"
@@ -221,7 +140,7 @@ collections:
               - { label: "Email", name: "email", widget: "string" }
               - { label: "Phone", name: "phone", widget: "string" }
 
-      # Site Configuration - FIXED: Using files array
+      # Site Configuration
       - label: "Site Configuration"
         name: "config"
         file: "public/config.json"

@@ -8,20 +8,22 @@ backend:
     uploadMedia: 'Upload "{{path}}"'
     deleteMedia: 'Delete "{{path}}"'
 
-# Media storage
+# Use this alternative if git-gateway doesn't work:
+# backend:
+#   name: github
+#   repo: your-username/your-repo-name
+#   branch: main
+
 media_folder: "public/images"
 public_folder: "/images"
 
-# Site settings
-site_url: "https://your-site.netlify.app"
-display_url: "https://your-site.netlify.app"
-logo_url: "/images/logos/logo.png"
+site_url: "https://stroit-designs.netlify.app"
+display_url: "https://stroit-designs.netlify.app"
+logo_url: "/images/logos/logo.jpg"
 
-# Editor configuration
 locale: "en"
 show_preview_links: true
 
-# Collections
 collections:
   # Home Page Slides
   - name: "home"

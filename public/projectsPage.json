@@ -27,6 +27,18 @@
           "/images/projects/8.webp",
           "/images/projects/9.webp"
         ]
+      },
+      {
+        "id": 3,
+        "title": "sport complex (test)",
+        "shortDescription": "testing addition of project",
+        "image": "/images/projects/1.jpg",
+        "fullDescription": "t﻿esting thetvsvkdalhlujlbabfdhylvydfddddddddddddddddddddddkmknmnnnnnnnnnnnnnnnnnnnnnnnnccccccccccccccccccccccckkkkkkkkkkkkkkkkkkkkkkkkkddddddddddddddddddddddddddddddddlllllllllllllllllllllllllllllwwwwwwwwwwwwwwwwwwwwwwwwwwjjjjjjjjjjjjjjjjjjjjjjjjddddddddddddddddddnnnnnnnnnnnnnnnnnnnnnrrrrrrrrrrrrrrrrrrrrkkkkkkkkkkkkkkkkkkkkkkkkfffffffffffffffffffffjjjjjjjjjjjjjjjjjjjjjjdffffffffffffffffffffffffyyyyyyyyyyy",
+        "gallery": [
+          "/images/projects/7.jpg",
+          "/images/projects/4.jpg",
+          "/images/projects/3.jpg"
+        ]
       }
     ]
   }

@@ -1,0 +1,194 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}"'
+    update: 'Update {{collection}} "{{slug}}"'
+    delete: 'Delete {{collection}} "{{slug}}"'
+    uploadMedia: 'Upload "{{path}}"'
+    deleteMedia: 'Delete "{{path}}"'
+
+# Media storage
+media_folder: "public/images"
+public_folder: "/images"
+
+# Site settings
+site_url: "https://your-site.netlify.app"
+display_url: "https://your-site.netlify.app"
+logo_url: "/images/logos/logo.png"
+
+# Editor configuration
+locale: "en"
+show_preview_links: true
+
+# Collections
+collections:
+  # Home Page Slides
+  - name: "home"
+    label: "Home Page Slides"
+    folder: "public"
+    create: false
+    slug: "homePage"
+    format: "json"
+    fields:
+      - label: "Home Page Configuration"
+        name: "home"
+        widget: "object"
+        fields:
+          - label: "Slides"
+            name: "slides"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - {
+                  label: "Background Image",
+                  name: "backgroundImage",
+                  widget: "image",
+                }
+              - label: "Text Alignment"
+                name: "alignment"
+                widget: "select"
+                options: ["left", "center", "right"]
+                default: "left"
+
+  # About Page
+  - name: "about"
+    label: "About Page"
+    folder: "public"
+    create: false
+    slug: "aboutPage"
+    format: "json"
+    fields:
+      - label: "About Page Configuration"
+        name: "about"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "text" }
+
+          - label: "STROIT Group Section"
+            name: "stroitGroup"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Content", name: "content", widget: "markdown" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "feature", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+
+          - label: "Timeline"
+            name: "timeline"
+            widget: "list"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Business Divisions"
+            name: "businessDivisions"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Group Companies"
+            name: "groupCompanies"
+            widget: "list"
+            fields:
+              - { label: "Company Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Logo Text", name: "logoText", widget: "string" }
+
+          - label: "Team Members"
+            name: "team"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Position", name: "position", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Initials", name: "initials", widget: "string" }
+
+          - label: "Accomplishments"
+            name: "accomplishments"
+            widget: "list"
+            field:
+              {
+                label: "Accomplishment",
+                name: "accomplishment",
+                widget: "string",
+              }
+
+  # Projects Page
+  - name: "projects"
+    label: "Projects"
+    folder: "public"
+    create: false
+    slug: "projectsPage"
+    format: "json"
+    fields:
+      - label: "Projects Configuration"
+        name: "projects"
+        widget: "object"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+
+          - label: "Project Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number", value_type: "int" }
+              - { label: "Project Title", name: "title", widget: "string" }
+              - {
+                  label: "Short Description",
+                  name: "shortDescription",
+                  widget: "text",
+                }
+              - { label: "Main Image", name: "image", widget: "image" }
+              - {
+                  label: "Full Description",
+                  name: "fullDescription",
+                  widget: "markdown",
+                }
+              - label: "Gallery Images"
+                name: "gallery"
+                widget: "list"
+                field:
+                  { label: "Gallery Image", name: "image", widget: "image" }
+
+  # Contact Page
+  - name: "contact"
+    label: "Contact Page"
+    folder: "public"
+    create: false
+    slug: "contactPage"
+    format: "json"
+    fields:
+      - label: "Contact Configuration"
+        name: "contact"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+
+  # Site Configuration
+  - name: "config"
+    label: "Site Configuration"
+    folder: "public"
+    create: false
+    slug: "config"
+    format: "json"
+    fields:
+      - label: "Company Information"
+        name: "company"
+        widget: "object"
+        fields:
+          - { label: "Company Name", name: "name", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Copyright Text", name: "copyright", widget: "string" }

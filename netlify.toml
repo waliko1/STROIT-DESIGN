@@ -3,6 +3,19 @@
   command = "npm run build"
 
 [[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Enable large media (optional, for better image handling)
+[plugins]
+  package = "@netlify/plugin-liffey"
+
+# Build environment
+[build.environment]
+  NODE_VERSION = "18"

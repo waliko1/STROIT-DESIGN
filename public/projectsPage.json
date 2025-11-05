@@ -32,24 +32,24 @@
         "id": 3,
         "title": "sport complex (test)",
         "shortDescription": "testing addition of project",
-        "image": "/images/projects/1.jpg",
+        "image": "/images/projects/1.webp",
         "fullDescription": "t﻿esting thetvsvkdalhlujlbabfdhylvydfddddddddddddddddddddddkmknmnnnnnnnnnnnnnnnnnnnnnnnnccccccccccccccccccccccckkkkkkkkkkkkkkkkkkkkkkkkkddddddddddddddddddddddddddddddddlllllllllllllllllllllllllllllwwwwwwwwwwwwwwwwwwwwwwwwwwjjjjjjjjjjjjjjjjjjjjjjjjddddddddddddddddddnnnnnnnnnnnnnnnnnnnnnrrrrrrrrrrrrrrrrrrrrkkkkkkkkkkkkkkkkkkkkkkkkfffffffffffffffffffffjjjjjjjjjjjjjjjjjjjjjjdffffffffffffffffffffffffyyyyyyyyyyy",
         "gallery": [
-          "/images/projects/7.jpg",
-          "/images/projects/4.jpg",
-          "/images/projects/3.jpg"
+          "/images/projects/7.webp",
+          "/images/projects/4.webp",
+          "/images/projects/3.webp"
         ]
       },
       {
         "id": 4,
         "title": "teestttt",
         "shortDescription": "jjjjuuuuuuuuuuyyyyyyyyyyyyttttttttttttllllllllllllllllljjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkbbbbbbb",
-        "image": "/images/projects/7.jpg",
+        "image": "/images/projects/7.webp",
         "fullDescription": "k﻿kkklllllwww\n\nj﻿jjjjjjjjlllllkkkjj\n\nj﻿jjjjjjiiiiooooo\n\nj﻿jjjjjjjhhgfdss\n\nj﻿kkkkkkkkku",
         "gallery": [
-          "/images/projects/1.jpg",
-          "/images/projects/4.jpg",
-          "/images/projects/1.jpg"
+          "/images/projects/1.webp",
+          "/images/projects/4.webp",
+          "/images/projects/1.webp"
         ]
       }
     ]

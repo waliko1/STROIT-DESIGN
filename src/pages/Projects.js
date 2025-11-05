@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+const MAX_TITLE_CHARS = 50;
+const MAX_DESC_CHARS = 120;
+
 const Projects = () => {
   const [config, setConfig] = useState(null);
   const [windowSize, setWindowSize] = useState({
@@ -92,6 +95,7 @@ const Projects = () => {
       <div
         style={{
           display: "grid",
+          justifyContent: "center",
           gridTemplateColumns: isMobile
             ? "1fr"
             : isTablet
@@ -103,20 +107,19 @@ const Projects = () => {
         }}
       >
         {config.projects.items.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            isMobile={isMobile}
-            isTablet={isTablet}
-          />
+          <ProjectCard key={project.id} project={project} isMobile={isMobile} />
         ))}
       </div>
     </div>
   );
 };
 
-// Separate Project Card Component for better organization
-const ProjectCard = ({ project, isMobile, isTablet }) => {
+const truncateText = (text, limit) => {
+  if (!text) return "";
+  return text.length > limit ? text.substring(0, limit - 3) + "..." : text;
+};
+
+const ProjectCard = ({ project, isMobile }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -126,9 +129,14 @@ const ProjectCard = ({ project, isMobile, isTablet }) => {
           backgroundColor: "#171717",
           borderRadius: "12px",
           overflow: "hidden",
-          transition: "all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-          cursor: "pointer",
           border: "1px solid #2A2A2A",
+          transition: "all 0.4s ease",
+          cursor: "pointer",
+          width: isMobile ? "100%" : "400px", // ✅ fixed uniform width
+          height: "480px", // ✅ fixed uniform height
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
           transform: isHovered ? "translateY(-8px)" : "translateY(0)",
           boxShadow: isHovered
             ? "0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(181, 158, 125, 0.1)"
@@ -137,12 +145,12 @@ const ProjectCard = ({ project, isMobile, isTablet }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Image Container */}
+        {/* Image Section */}
         <div
           style={{
             position: "relative",
+            height: "250px",
             overflow: "hidden",
-            height: isMobile ? "250px" : "300px",
           }}
         >
           <img
@@ -156,7 +164,6 @@ const ProjectCard = ({ project, isMobile, isTablet }) => {
               transform: isHovered ? "scale(1.05)" : "scale(1)",
             }}
           />
-          {/* Overlay */}
           <div
             style={{
               position: "absolute",
@@ -175,9 +182,8 @@ const ProjectCard = ({ project, isMobile, isTablet }) => {
           <div
             style={{
               position: "absolute",
-              bottom: "1.5rem",
+              bottom: "1.2rem",
               left: "1.5rem",
-              right: "1.5rem",
               opacity: isHovered ? 1 : 0,
               transform: isHovered ? "translateY(0)" : "translateY(10px)",
               transition: "all 0.3s ease",
@@ -197,31 +203,39 @@ const ProjectCard = ({ project, isMobile, isTablet }) => {
         </div>
 
         {/* Content */}
-        <div
-          style={{
-            padding: isMobile ? "1.5rem" : "2rem",
-          }}
-        >
+        <div style={{ padding: "1.5rem", flex: 1 }}>
           <h3
             style={{
               color: "#F1EADA",
-              marginBottom: "0.8rem",
-              fontSize: isMobile ? "1.3rem" : "1.5rem",
+              fontSize: isMobile ? "1.2rem" : "1.4rem",
               fontWeight: 500,
+              marginBottom: "0.8rem",
               lineHeight: 1.3,
+              height: "3rem", // fixed title area
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              display: "-webkit-box",
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: "vertical",
             }}
           >
-            {project.title}
+            {truncateText(project.title, MAX_TITLE_CHARS)}
           </h3>
           <p
             style={{
               color: "#CEC1A8",
-              fontSize: isMobile ? "0.95rem" : "1rem",
+              fontSize: "1rem",
               lineHeight: 1.6,
               fontWeight: 300,
+              height: "4.8rem", // fixed description area
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              display: "-webkit-box",
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: "vertical",
             }}
           >
-            {project.shortDescription}
+            {truncateText(project.shortDescription, MAX_DESC_CHARS)}
           </p>
         </div>
       </div>
